@@ -73,4 +73,16 @@ header .action-btn a {
   font-size: 20px;
   font-weight: 500;
 }
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: calc(100vh - 90px);
+}
+
+.container .card-img img {
+  -webkit-transform: translate3d(100px, 0, 0);
+          transform: translate3d(100px, 0, 0);
+}
 /*# sourceMappingURL=style.css.map */
