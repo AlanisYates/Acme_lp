@@ -1,18 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 
 $primary-color: #d5dedc;
+$accent-color: #27aa23;
+$grey: rgb(95, 95, 95);
 
 * {
   font-family: "Manrope", sans-serif;
   box-sizing: border-box;
 }
 
-section {
-  background: $primary-color;
-}
 html,
 body {
   font-family: "Manrope", sans-serif;
+  overflow: hidden;
 }
 
 header {
@@ -23,7 +23,6 @@ header {
   flex-direction: row;
   height: 90px;
   padding: 0 40px;
-  background: $primary-color;
 
   .logo-2 {
     font-size: 30px;
@@ -52,7 +51,6 @@ header {
       color: white;
       background: black;
       padding: 15px;
-      //   border-radius: 20px;
       width: 160px;
       display: flex;
       justify-content: center;
@@ -66,7 +64,7 @@ header {
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  background: $primary-color;
+  // background: $primary-color;
 
   .content {
     height: calc(100vh - 90px);
@@ -75,22 +73,60 @@ header {
     justify-content: center;
     align-items: center;
 
-    .left-info {
-      font-weight: 500;
-      font-size: 5rem;
-      width: 50%;
-      transform: translate(0, -170px);
+    .shape1 {
+      position: absolute;
+      width: 900px;
+      height: 500px;
+      background: linear-gradient(to left, rgb(0, 0, 0), rgb(95, 95, 95));
 
+      // opacity: 0.2;
+      border-radius: 20px;
+      right: -400px;
+      z-index: -1;
     }
 
-    .percent {
-font-weight: 600;
-font-size: 7.5rem;
+    .shape2 {
+      position: absolute;
+      width: 920px;
+      height: 520px;
+      border: 3px dashed $accent-color;
+      border-radius: 20px;
+      right: -200px;
+      transform: translateY(-50px);
+      z-index: -2;
+    }
+
+    .left-info {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      justify-content: center;
+      height: 100%;
+      z-index: -1;
+
+      .left-top {
+        font-weight: 500;
+        font-size: 6rem;
+        transform: translate3d(0, -100px, 0);
+
+        .percent {
+          font-weight: 600;
+          font-size: 7.5rem;
+        }
+      }
+
+      .testimonial {
+        font-weight: 300;
+        font-size: 3rem;
+        font-style: italic;
+        width: 70%;
+        transform: translate3d(0px, 60px, 0);
+      }
     }
 
     .card {
-     
-      transform: scale(1.2) translate3d(-20px, 20px ,0); 
+      transform: scale(1.2) translate3d(-20px, 0px, 0);
     }
   }
 }

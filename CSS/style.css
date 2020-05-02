@@ -5,13 +5,10 @@
           box-sizing: border-box;
 }
 
-section {
-  background: #d5dedc;
-}
-
 html,
 body {
   font-family: "Manrope", sans-serif;
+  overflow: hidden;
 }
 
 header {
@@ -31,7 +28,6 @@ header {
           flex-direction: row;
   height: 90px;
   padding: 0 40px;
-  background: #d5dedc;
 }
 
 header .logo-2 {
@@ -81,7 +77,6 @@ header .action-btn a {
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  background: #d5dedc;
 }
 
 .container .content {
@@ -98,21 +93,71 @@ header .action-btn a {
           align-items: center;
 }
 
-.container .content .left-info {
-  font-weight: 500;
-  font-size: 5rem;
-  width: 50%;
-  -webkit-transform: translate(0, -170px);
-          transform: translate(0, -170px);
+.container .content .shape1 {
+  position: absolute;
+  width: 900px;
+  height: 500px;
+  background: -webkit-gradient(linear, right top, left top, from(black), to(#5f5f5f));
+  background: linear-gradient(to left, black, #5f5f5f);
+  border-radius: 20px;
+  right: -400px;
+  z-index: -1;
 }
 
-.container .content .percent {
+.container .content .shape2 {
+  position: absolute;
+  width: 920px;
+  height: 520px;
+  border: 3px dashed #27aa23;
+  border-radius: 20px;
+  right: -200px;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  z-index: -2;
+}
+
+.container .content .left-info {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  z-index: -1;
+}
+
+.container .content .left-info .left-top {
+  font-weight: 500;
+  font-size: 6rem;
+  -webkit-transform: translate3d(0, -100px, 0);
+          transform: translate3d(0, -100px, 0);
+}
+
+.container .content .left-info .left-top .percent {
   font-weight: 600;
   font-size: 7.5rem;
 }
 
+.container .content .left-info .testimonial {
+  font-weight: 300;
+  font-size: 3rem;
+  font-style: italic;
+  width: 70%;
+  -webkit-transform: translate3d(0px, 60px, 0);
+          transform: translate3d(0px, 60px, 0);
+}
+
 .container .content .card {
-  -webkit-transform: scale(1.2) translate3d(-20px, 20px, 0);
-          transform: scale(1.2) translate3d(-20px, 20px, 0);
+  -webkit-transform: scale(1.2) translate3d(-20px, 0px, 0);
+          transform: scale(1.2) translate3d(-20px, 0px, 0);
 }
 /*# sourceMappingURL=style.css.map */
