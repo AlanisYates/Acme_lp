@@ -105,6 +105,7 @@ header {
       bottom: 67px;
       left: -240px;
       opacity: .8;
+      
     }
 
     .shape4 {
@@ -114,7 +115,7 @@ header {
       background: $accent-color;
       clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
       opacity: 0.2;
-      z-index: -1;
+      z-index: -2;
       bottom: 77px;
       left: -220px;
     }
