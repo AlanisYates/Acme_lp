@@ -97,8 +97,8 @@ header .action-btn a {
   position: absolute;
   width: 900px;
   height: 500px;
-  background: -webkit-gradient(linear, right top, left top, from(black), to(#5f5f5f));
-  background: linear-gradient(to left, black, #5f5f5f);
+  background: -webkit-gradient(linear, right top, left top, from(#444444), to(#a7a7a7));
+  background: linear-gradient(to left, #444444, #a7a7a7);
   border-radius: 20px;
   right: -400px;
   z-index: -1;
@@ -114,6 +114,33 @@ header .action-btn a {
   -webkit-transform: translateY(-50px);
           transform: translateY(-50px);
   z-index: -2;
+  opacity: 0.7;
+}
+
+.container .content .shape3 {
+  position: absolute;
+  height: 155px;
+  width: 900px;
+  background: #27aa23;
+  -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+          clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  z-index: -1;
+  bottom: 67px;
+  left: -240px;
+  opacity: .8;
+}
+
+.container .content .shape4 {
+  position: absolute;
+  height: 155px;
+  width: 900px;
+  background: #27aa23;
+  -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+          clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  opacity: 0.2;
+  z-index: -1;
+  bottom: 77px;
+  left: -220px;
 }
 
 .container .content .left-info {
@@ -140,6 +167,7 @@ header .action-btn a {
   font-size: 6rem;
   -webkit-transform: translate3d(0, -100px, 0);
           transform: translate3d(0, -100px, 0);
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .container .content .left-info .left-top .percent {
@@ -152,8 +180,8 @@ header .action-btn a {
   font-size: 3rem;
   font-style: italic;
   width: 70%;
-  -webkit-transform: translate3d(0px, 60px, 0);
-          transform: translate3d(0px, 60px, 0);
+  -webkit-transform: translate3d(-80px, 60px, 0);
+          transform: translate3d(-80px, 60px, 0);
 }
 
 .container .content .card {
