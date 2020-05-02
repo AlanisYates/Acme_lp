@@ -102,7 +102,14 @@ header .action-btn a {
   font-weight: 700;
   font-size: 5rem;
   width: 50%;
-  padding-right: 100px;
+  -webkit-transform: translate(0, -140px);
+          transform: translate(0, -140px);
+  padding-right: 50px;
   margin-right: 100px;
+}
+
+.container .content .card {
+  -webkit-transform: scale(1.2) translate3d(0, 50px, 0);
+          transform: scale(1.2) translate3d(0, 50px, 0);
 }
 /*# sourceMappingURL=style.css.map */

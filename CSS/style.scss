@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 
-
 $primary-color: #d5dedc;
 
 * {
@@ -9,12 +8,11 @@ $primary-color: #d5dedc;
 }
 
 section {
-    background: $primary-color;
+  background: $primary-color;
 }
 html,
 body {
   font-family: "Manrope", sans-serif;
-
 }
 
 header {
@@ -26,7 +24,6 @@ header {
   height: 90px;
   padding: 0 40px;
   background: $primary-color;
-  
 
   .logo-2 {
     font-size: 30px;
@@ -78,15 +75,17 @@ header {
     justify-content: center;
     align-items: center;
 
-
     .left-info {
       font-weight: 700;
       font-size: 5rem;
       width: 50%;
-      padding-right: 100px;
+      transform: translate(0, -140px);
+      padding-right: 50px;
       margin-right: 100px;
     }
 
-
+    .card {
+      transform: scale(1.2) translate3d(0, 50px ,0); 
+    }
   }
 }
