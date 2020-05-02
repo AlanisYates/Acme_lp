@@ -76,16 +76,21 @@ header {
     align-items: center;
 
     .left-info {
-      font-weight: 600;
+      font-weight: 500;
       font-size: 5rem;
       width: 50%;
-      transform: translate(0, -140px);
-      padding-right: 50px;
-      margin-right: 100px;
+      transform: translate(0, -170px);
+
+    }
+
+    .percent {
+font-weight: 600;
+font-size: 7.5rem;
     }
 
     .card {
-      transform: scale(1.2) translate3d(0, 50px ,0); 
+     
+      transform: scale(1.2) translate3d(-20px, 20px ,0); 
     }
   }
 }
