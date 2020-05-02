@@ -42,7 +42,7 @@ body {
   border-radius: 15px;
   color: #fff;
   text-shadow: 0 1px 1px rgba(0,0,0,0.3);
-  box-shadow: 0 1px 10px 1px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 40px 5px rgba(0,0,0,0.3);
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   background-image: -webkit-gradient(linear, left top, right top, from(#111), to(#555));
@@ -58,9 +58,11 @@ body {
   position: absolute;
   right: 0;
   height: inherit;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff6767), to(#ff4545));
-  background-image: linear-gradient(to bottom, #ff6767, #ff4545);
-  box-shadow: 0 0 10px 0px rgba(0,0,0,0.5);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3f0e0e), to(#ff4545));
+  background-image: linear-gradient(to bottom, 
+  #27aa23, 
+  #292929);
+  box-shadow: 0 0 15px 0px rgba(0,0,0,0.5);
 }
 .strip-bottom {
   width: 200px;
