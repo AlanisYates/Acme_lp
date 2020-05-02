@@ -167,7 +167,7 @@ header .action-btn a {
   font-size: 6rem;
   -webkit-transform: translate3d(0, -100px, 0);
           transform: translate3d(0, -100px, 0);
-  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: -2px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .container .content .left-info .left-top .percent {
